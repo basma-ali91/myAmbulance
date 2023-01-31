@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    list-style: none;
+}
+
+:root {
+    --maincolor1: #4A5CD0;
+    --maincolor2: #4A95D2;
+    --colorp1: #223140;
+    --colorp2: #14202B;
+}
+
+body {
+    direction: rtl;
+}
+
+/* start header section */
+.navbar {
+    border-bottom: solid #a7c7ff 1px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.collapse .nav-item .nav-link {
+    color: #000;
+}
+
+.collapse .nav-item .nav-link:hover {
+    color: var(--maincolor2);
+}
+
+.collapse .btn {
+    background-color: var(--maincolor1);
+    color: #fff;
+}
+
+.collapse .btn:focus {
+    box-shadow: none;
+    background-color: var(--maincolor1);
+    color: #fff;
+}
+
+/* end header section */
+/* start home section */
+#home {
+    padding: 6rem 2rem;
+}
+
+#home .home-content {
+    padding: 3rem 2rem;
+}
+
+#home .home-content h2 {
+    font-weight: 400;
+    margin-bottom:2rem
+}
+
+#home .home-content p {
+    text-align: justify;
+    font-size: .8rem;
+    color: var(--colorp1);
+    margin-bottom:2rem
+}
+
+#home .home-content .homep {
+    color: var(--maincolor2);
+}
+
+#home .btn {
+    color: #fff;
+    background-color: #000;
+    margin-right: 1rem;
+}
+
+#home .home-img {
+    padding: 0 3rem;
+    position: relative;
+
+}
+
+#home .home-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#home .home-img .img-layer {
+    position: absolute;
+    left: 2.5rem;
+    bottom: 0;
+    width: 80%;
+    z-index: -1;
+}
+
+/* end home section */
+/* start howareyou section */
+.howarewe .content{
+    padding:2rem
+}
+.howarewe .content h1{
+padding: 4rem 0;
+}
+.howarewe .content p{
+    padding-left: 3rem ;
+    text-align: justify;
+    color: var(--colorp1);
+}
+.howarewe .vedioimg{
+    position: relative;
+}
+.howarewe .vedioimg img{
+    width: 100%;
+    height: 100%;
+}
+.howarewe .vedioArrow{
+    position: absolute;
+    top: 40%;
+    z-index: 99;
+}
+.howarewe .vedioArrow img{
+    width:70%;
+    height: 70%;
+}
+.howarewe .btn-primary{
+    --bs-btn-bg: none; 
+     --bs-btn-border-color: none;
+     --bs-btn-hover-bg: none;
+     --bs-btn-hover-border-color: none;
+     --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-disabled-bg: none;
+     --bs-btn-disabled-border-color: none
+}
+/* end howareyou section */
+/* start  الخدمات section */
+.howarewe,
+#الخدمات,
+#المميزات,
+#اعمالنا,
+#appwork 
+{
+    padding: 4rem 0;
+}
+
+#الخدمات h1,
+#المميزات h1,
+#contact h1 {
+    padding-bottom: 3rem;
+    font-weight: 400;
+    position: relative;
+}
+
+#الخدمات h1::after,
+#المميزات h1::after,
+#contact h1::after {
+    content: "";
+    position: absolute;
+    left: 46%;
+    top: 55%;
+    width: 8%;
+    border-bottom: 2px solid var(--maincolor1);
+}
+
+#الخدمات .card,
+#المميزات .card {
+    padding: 3.5rem 0;
+    --bs-card-border-color: rgb(0 0 0 / 7%);
+    --bs-card-border-radius: 0.8rem;
+    --bs-card-box-shadow: -10px 50px 8px rgb(0 0 0 /15%);
+    margin-bottom: 1rem;
+}
+
+#الخدمات .card:hover {
+    background-color: var(--maincolor1);
+    color: #fff
+}
+
+#الخدمات .card:hover span {
+    background-color: #fff;
+    color: var(--maincolor1);
+}
+
+#الخدمات .card:hover p {
+    color: #fff;
+}
+
+#الخدمات .card span {
+    display: inline-block;
+    background-color: var(--maincolor1);
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    margin: auto;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+#الخدمات .card h5 {
+    padding: .7rem 0;
+}
+
+#الخدمات .card p,
+#المميزات .card p {
+    padding: 0 2rem;
+    font-size: .9rem;
+    color: var(--colorp1);
+}
+
+/* end  الخدمات section */
+/* start المميزات  section */
+#المميزات ,.howarewe ,#appwork  {
+    background-color: rgba(74, 92, 208, 0.051);
+    padding-bottom: 8rem;
+}
+
+#المميزات .card {
+    padding: 2rem 0;
+}
+
+#المميزات .card h5 {
+    font-size: 1rem;
+}
+
+#المميزات .card span {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    background-color: rgba(74, 92, 208, 0.051);
+    color: var(--maincolor1);
+    margin-right: 1rem;
+}
+
+#المميزات .card p {
+    padding: 0;
+}
+
+/* end المميزات  section */
+/* start اعمالنا section */
+#اعمالنا {
+    padding-bottom: 5rem;
+}
+
+#اعمالنا h1,.appworktitle h1 {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+#اعمالنا .works-title p ,#appwork .appworktitle p{
+    padding-bottom: 5rem;
+    color: var(--colorp1);
+}
+
+#اعمالنا #pills-tab {
+    border: 1px solid #e6eaee;
+    border-radius: 30px;
+    justify-content: space-around;
+    --bs-nav-link-color: var(--colorp1);
+    margin-bottom: 2rem;
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: 1.8rem !important;
+}
+
+#اعمالنا #pills-tab .nav-item {
+    margin: .3rem 0;
+}
+
+#اعمالنا img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+/* end اعمالنا  section */
+
+.appworkimg {
+    display: flex;
+    position: relative;
+   margin: auto;
+}
+.appworklayer{
+    position: absolute;
+    right: 20%;
+    bottom:-7%;
+
+}
+
+/* start contact section */
+#contact{
+    padding: 3rem 0;
+}
+#contact img{
+    width: 100%;
+    height: 100%;
+}
+#contact .row{
+    padding: 2rem 0;
+    border: 1px  solid #d8dee440;
+    border-radius: 20px;
+}
+/* end contact section */
+/* start footer section */
+footer{
+    padding: 3rem  0;
+    background-color: rgba(74, 92, 208, 0.051);
+}
+footer .footerp1 ,footer li{
+    font-size: .8rem;
+}
+footer .footerp1{
+    padding-left: 3rem;
+}
+footer ul{
+    padding-right: 0;
+}
+footer .socialicons span:hover{
+color: #4A5CD0;
+}
+footer .socialicons span{
+    display: inline-block;
+    font-size: 1rem;
+   color:#000;
+   margin-right: 1rem;
+}
+footer .btn{
+background-color: #fff;
+    font-size: .7rem;
+    margin-bottom: .5rem;
+}
+footer .footerp{
+    padding: 1rem 1rem 0;
+    border-top: 1px solid #d8dee4;
+}
+/*end footer section */
+
+
+/* start mediaquery */
+
+@media screen and (max-width:768px) {
+    #home {
+        padding: 4rem 0;
+    }
+    #home .home-content {
+        padding: 1rem 0;
+    }
+    #home .btn {
+        margin-bottom: 1.5rem;
+    }
+    #home .home-img {
+        padding: 0 1rem;
+    }
+    .howarewe .content{
+        padding:1rem 0;
+    }
+    .appworkimg {
+        width: 100%;
+        display: flex;
+       flex-direction: column;
+       
+    }
+    
+    .appworklayer{
+      display: none;
+    }
+    #اعمالنا #pills-tab {
+        border: none;
+       
+    }
+}
